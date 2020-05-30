@@ -7,11 +7,11 @@
 </head>
 <body>
     <?php
-        function sayHi()
+        function sayHi($name)
         {
-            echo "Hello, User!";
+            echo "Hello, $name";
         }
-        sayHi();
+        sayHi("Tom");
     ?>
 </body>
 </html>
