@@ -8,10 +8,15 @@
 <body>
     <?php
         $isMale = true;
+        $isTall = false;
 
-        if ($isMale)
+        if ($isMale && $isTall)
         {
-            echo "You are a male", "<br>";
+            echo "You are a tall male", "<br>";
+        }
+        elseif ($isMale && !$isTall)
+        {
+            echo "You are a short male", "<br>";
         }
         else
         {
