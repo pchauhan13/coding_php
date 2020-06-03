@@ -20,6 +20,11 @@
                 $this->pages = $Pages;
                 echo "new book created<br>";
             }
+
+            function printBook()
+            {
+                echo "Book Title: $this->title, Book Author: $this->author, Book Pages: $this->pages<br>";
+            }
         }
 
         $book = new Book("program 21", "prashant", 43243);
@@ -28,7 +33,8 @@
         // $book->pages = 3423;
 
         // echo $book;
-        echo $book->author, "<br>";
+        // echo $book->author, "<br>";
+        $book->printBook();
     ?>
 </body>
 </html>
