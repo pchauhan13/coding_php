@@ -12,6 +12,11 @@
             var $title;
             var $author;
             var $pages;
+
+            function __construct()
+            {
+                echo "new book created<br>";
+            }
         }
 
         $book = new Book;
