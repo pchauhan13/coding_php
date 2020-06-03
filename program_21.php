@@ -9,9 +9,9 @@
     <?php
         class Book
         {
-            var $title;
-            var $author;
-            var $pages;
+            public $title;
+            private $author;
+            private $pages;
 
             function __construct($Title, $Author, $Pages)
             {
@@ -25,12 +25,24 @@
             {
                 echo "Book Title: $this->title, Book Author: $this->author, Book Pages: $this->pages<br>";
             }
+
+            function getAuthor()
+            {
+                return $this->author;
+            }
+
+            function setAuthor($Author)
+            {
+                $this->author = $Author;
+            }
         }
 
         $book = new Book("program 21", "prashant", 43243);
         // $book->title = "program 21";
         // $book->author = "prashant";
         // $book->pages = 3423;
+
+        $book->title = "Another title";
 
         // echo $book;
         // echo $book->author, "<br>";
