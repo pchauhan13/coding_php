@@ -37,6 +37,14 @@
             }
         }
 
+        class SpecialBook extends Book
+        {
+            function printSpecialBook()
+            {
+                echo "Special Book:<br>";
+            }
+        }
+
         $book = new Book("program 21", "prashant", 43243);
         // $book->title = "program 21";
         // $book->author = "prashant";
